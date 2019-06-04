@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.find(params[:first_name])
+    @student = Student.find_by(params[:first_name])
   end
 
 end
