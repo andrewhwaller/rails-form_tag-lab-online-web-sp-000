@@ -29,6 +29,6 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
-  # gem 'capybara'
+  gem 'capybara'
   gem 'database_cleaner'
 end
