@@ -5,6 +5,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+    @student = Student.find_by(:form_params)
   end
 
   def new
