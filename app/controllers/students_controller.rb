@@ -1,5 +1,7 @@
 class StudentsController < ApplicationController
 
+  before_action :set_student, only: :show
+  
   def index
     @students = Student.all
   end
@@ -12,7 +14,7 @@ class StudentsController < ApplicationController
 
   def create
     session[:form_params] = params.inspect
-    redirect_to show_student_path
+    redirect_to new_student_path
   end
 
 end
